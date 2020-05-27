@@ -75,7 +75,7 @@ export default class Results extends React.Component{
     const { winner, loser, error, loading } = this.state
 
     if(loading === true){
-      return <Loading text='Nice'/>
+      return <Loading text='Battling'/>
     }
 
     if(error){
