@@ -18,7 +18,7 @@ export default function Loading ({ text = 'Loading', speed = 300}) {
   React.useEffect( () => {
     const id = window.setInterval(() => {
       setContent((content) => {
-        content === `${text}...` ? text : `${content}.`
+        return content === `${text}...` ? text : `${content}.`
       })
     }, speed)
     return () => clearInterval(id)
